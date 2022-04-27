@@ -1,5 +1,3 @@
-const name = 'Джон'
-const admin = name
-
-alert(admin)
+const name = prompt('Как тебя зовут?', '')
+alert(`Привет ${name}`)
 
