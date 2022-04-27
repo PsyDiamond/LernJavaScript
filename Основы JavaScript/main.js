@@ -1,3 +1,6 @@
-const name = prompt('Как тебя зовут?', '')
-alert(`Привет ${name}`)
+const jsName = prompt('Какое «официальное» название JavaScript?', '')
+const result = (jsName === 'ECMAScript' 
+                ? 'Верно!' 
+                : 'Не знаете? ECMAScript!')
+alert(result)
 
