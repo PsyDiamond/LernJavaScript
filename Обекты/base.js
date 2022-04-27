@@ -1,15 +1,12 @@
-let schedule = {};
+let salaries = {
+    John: 100,
+    Ann: 160,
+    Pete: 130
+  }
+  let sum = 0;
 
-console.log( isEmpty(schedule) ); // true
+  for(let key in salaries) {
+      sum += salaries[key];
+  }
 
-schedule["8:30"] = "get up";
-
-console.log( isEmpty(schedule) ); // false
-
-function isEmpty(obj) {
-    for (let key in obj) {
-        // если тело цикла начнет выполняться - значит в объекте есть свойства
-        return false;
-      }
-      return true;
-} 
+  console.log('sum = ', sum)
